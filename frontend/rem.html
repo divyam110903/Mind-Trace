@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Playlist</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P', monospace;
+            background-color: #87ceeb;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .card {
+            width: 80%;
+            max-width: 800px;
+            background-image: linear-gradient(to bottom, #87ceeb, #add8e6);
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+        }
+
+        .card-content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+        .playlist {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+        .playlist li {
+            margin-bottom: 10px;
+        }
+
+        .playlist-option {
+            margin-top: 40px;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 40px 0 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin: 0 20px;
+        }
+
+        .gallery-item img {
+            width: 400px;
+            height: 500px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(100, 149, 237, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .gallery-item .overlay h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+        .gallery-item .overlay p {
+            font-size: 16px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+               
+                <div class="playlist-option">
+                    <p>Choose a playlist:</p>
+                    <select>
+                        <option value="retro-hits">Retro Hits</option>
+                        <option value="80s-classics">80s Classics</option>
+                        <option value="90s-jams">90s Jams</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="childhood.jpeg" alt="Childhood Memory">
+                <div class="overlay">
+                    <h3>Childhood Memory</h3>
+                    <p>A nostalgic photo from my childhood days.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="family-gathering.jpeg" alt="Family Gathering">
+                <div class="overlay">
+                    <h3>Family Gathering</h3>
+                    <p>A treasured moment with my family.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="old.avif" alt="Old Friends">
+                <div class="overlay">
+                    <h3>Old Friends</h3>
+                    <p>Reuniting with friends from the past.</p>
+                </div>
+            </div>
+
+            <!-- Add more gallery items as needed -->
+        </div>
+    </div>
+</body>
+</html>

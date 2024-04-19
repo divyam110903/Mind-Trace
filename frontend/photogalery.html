@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reminiscing - Photo Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('retro-sky-background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+      padding: 40px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .gallery-item .overlay h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .gallery-item .overlay p {
+      font-size: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="photo1.jpg" alt="Childhood Memory">
+      <div class="overlay">
+        <h3>Childhood Memory</h3>
+        <p>A nostalgic photo from my childhood days.</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="photo2.jpg" alt="Family Gathering">
+      <div class="overlay">
+        <h3>Family Gathering</h3>
+        <p>A treasured moment with my family.</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="photo3.jpg" alt="Old Friends">
+      <div class="overlay">
+        <h3>Old Friends</h3>
+        <p>Reuniting with friends from the past.</p>
+      </div>
+    </div>
+    <!-- Add more gallery items as needed -->
+  </div>
+</body>
+</html>

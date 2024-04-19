@@ -1,0 +1,210 @@
+body {  
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    background-image: url(blue\ minimal\ quote\ phone\ wallpaper.png);
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500; 
+    font-size: 18px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar li a:hover {
+    color: #0085ff;
+}
+
+.logo-container img {
+    height: 30px;
+    margin-top: 2px;
+    margin-left: 50px;
+    margin-right: 80px;
+    opacity: 0.8;
+    background: transparent;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.logo-container {
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 10px;
+}
+
+.right {
+    display: inline-block;
+    line-height: 60px;
+    margin-right: 10px;
+     margin-left: 40%;
+}
+
+.username {
+    color: #333;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.username::after {
+    content: "|";
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #777;
+}
+
+.username,
+.logout {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+  .logout-btn {
+    background-color:darkmagenta;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .logout-btn:hover {
+    opacity: 0.8;
+    background-color: rgb(17, 1, 17);
+  }
+  
+  .logout-btn::after {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 4px 4px 0;
+    border-color: transparent transparent transparent white;
+    margin-left: 5px;
+  }    
+  .welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 25px;
+   margin-bottom: 25px;
+    background-position: center;
+    font-family: Cursive, Lucida Handwriting;
+    color: #4d46b2;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  
+#memory-quotes {
+    position: relative;
+    width: 100%;
+    text-align: center; 
+}
+
+.quote {
+    display: inline-block; 
+    padding: 20px;
+    background-image: url("quotesbg.jpg");
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 50px;
+    font-size: 20px; 
+    font-weight: 900; 
+}
+
+.quote-active {
+    opacity: 1;
+}
+
+.container {
+background-image: url('White\ Blue\ Simple\ Motivational\ Quote\ Instagram\ Story.png');
+background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  
+    margin-left: 270px;
+    margin-right: 270px;
+    margin-bottom: 100px;
+}
+  .image-container {
+    margin: 0 30px;
+    transition: all 0.3s ease; /* Transition for smooth effect */
+  }
+  
+  .image-container img { 
+    display: block;
+    width: 500px;
+    height: 400px;
+   
+  }
+  
+  .image-container:hover {
+    transform: scale(1.1); 
+  }
+  
+  
+  
+  .bnavbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F0F8FF;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+  }
+  
+  .bnavbar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    transition: color 0.3s;
+  }
+  
+  .bnavbar a img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+  }
+  
+  .bnavbar a:hover {
+    color: navy;
+  }

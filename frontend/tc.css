@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.imga{
+margin-left: 5%;
+margin-right: 5%;
+    width: 90%;
+    height: 30vh; 
+    object-fit: fill; 
+    box-shadow: 4cap;
+}
+.containera{
+    display: flex;
+}
+.texta{
+    align-items: center;
+    margin-left: 40%;
+    font-family: 'Playfair Display', serif; 
+}
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+  }
+  
+  .tile {
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    height: 100%;
+    width:25%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tile:hover {
+    transform: scale(1.05);
+  }
+  
+  .tile img {
+    width: 100%;
+    
+    object-fit: cover;
+  }
+  
+  .tile-content {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0) 100%);
+    color: #fff;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .tile:hover .tile-content {
+    opacity: 1;
+  }
+  
+  .tile-content h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .tile-content p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  

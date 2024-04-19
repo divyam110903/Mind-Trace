@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="slider.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <div class="logo-container">
+                    <img src="LOGO.png" alt="Logo">
+                </div>
+            </li>
+            <li><a href="#">My Health</a></li>
+            <li><a href="tc.html">Training Corner</a></li>
+            <li><a href="rem.html">Reminiscing</a></li>
+            <li class="right"><span class="username"> user </span></li>
+
+            
+            <li>
+                <button class="logout-btn" onclick="logout()">Logout →</button>
+            </li>
+            
+        </ul>
+    </nav>
+    <br>
+    <div id="memory-quotes"></div>
+
+    <br>
+    <div class="welcome">
+        Let's unlock the potential of your mind together.
+        <br>
+       Your memory transformation starts now!
+    </div>
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slide"><a href="tc.html"><img src="Exercise Your Brain!.png" alt="Image 1"></a></div>
+            <div class="slide"> <a href="task.html"><img src="World Health Day.png" alt="Image 2"></a></div>
+            <div class="slide"> <img src="Our New Location.png" alt="Image 3"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+    <div class="image-container">
+        <img src="Community.png" alt="Consult Top Psychologists Online">
+      </div>
+      <div class="image-container">
+        <img src="connect for instant help.jpg" alt="Connect With Psychologists Instantly">
+      </div>
+    </div>
+
+    <div class="bnavbar">
+        <a href="home.html" id="homeLink"><img src="home.png" alt="Home">Home</a>
+        <a href="task.html" id="timelineLink"><img src="timeline.png" alt="Timeline">Timeline</a>
+        <a href="#" id="profileLink"><img src="profile.png" alt="Profile">Profile</a>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="quotes.js"></script>
+    <script>
+        function logout() {
+        
+            window.location.href = "index.html";
+        }
+
+    </script>
+    
+</body>
+</html>
